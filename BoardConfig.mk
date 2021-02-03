@@ -50,7 +50,7 @@ TARGET_USES_UEFI := true
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048 firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7 androidboot.usbcontroller=a600000.dwc3 panic_on_err=1 zram.backend=z3fold buildvariant=user androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += skip_override androidboot.fastboot=1
-BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_BASE := 0x00008000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
